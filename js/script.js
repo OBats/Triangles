@@ -1,0 +1,1 @@
+"use strict";var clipPath=document.querySelector(".clip-path-animation"),body=document.body;clipPath.onclick=function(){body.classList.toggle("css")};

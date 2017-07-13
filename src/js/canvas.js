@@ -175,8 +175,8 @@ function canvas() {
 
 // Setting styles to object
   context.lineWidth = 1;
-  context.strokeStyle = '#666666';
-  context.fillStyle = "#FFCC00";
+  context.strokeStyle = "rgba(255,255,255,0.4)"
+  context.fillStyle = "#00FF7F";
 
 // Rendering arrays
   function render(state) {
@@ -187,6 +187,7 @@ function canvas() {
       context.moveTo(state[i], state[i + 1]);
       context.lineTo(state[i + 2], state[i + 3]);
       context.lineTo(state[i + 4], state[i + 5]);
+      context.fillStyle = "rgba(128,0,128," + Math.random(10) / 10 + ")";
       context.closePath();
       context.stroke();
       context.fill();

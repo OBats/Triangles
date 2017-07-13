@@ -1,6 +1,8 @@
 @include render($js);
 
-// @include render-svg()
+@include render-svg-js()
+
+@include render-svg-css()
 
 .css {
   @include render($css);
@@ -26,17 +28,28 @@ canvas {
   border: 1px solid #000000;
 }
 
-// .svg {
-//   position: relative;
-//   width: 800px;
-//   height: 600px;
-//   margin-bottom: 10px;
-//   border: 1px solid #000000;
 
-//   & > * {
-//     position: absolute;
-//     top: 0;
-//     left: 0;
-//     transition: all .7s cubic-bezier(0.785, 0.135, 0.15, 0.86);
-//   }
-// }
+.svg {
+  position: relative;
+  display: block;
+  width: 800px;
+  height: 600px;
+  margin-bottom: 10px;
+  border: 1px solid #000000;
+
+  & > * {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 0.7s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  }
+}
+
+.svg-js,
+.svg-css {
+  opacity: 0;
+}
+
+.visibility {
+  opacity: 1;
+}

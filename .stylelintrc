@@ -1,0 +1,14 @@
+{
+  "syntax": "scss",
+  "extends": "stylelint-config-standard",
+  "rules": {
+    "no-empty-source": null,
+    "max-nesting-depth": 2,
+    "no-duplicate-selectors": true,
+    "color-hex-length": "long"
+    },
+  "ignoreFiles": [
+    "src/sass/global/normalize.scss",
+    "src/sass/mixins/mq-mixins.scss"
+  ]
+}

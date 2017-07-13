@@ -1,1 +1,1 @@
-"use strict";var clipPath=document.querySelector(".clip-path-animation"),body=document.body;clipPath.onclick=function(){body.classList.toggle("css")};
+"use strict";var body=document.body,clipPath=document.querySelector(".clip-path-animation"),svg=document.querySelector(".svg"),svgJS=document.querySelector(".svg-js"),svgCSS=document.querySelector(".svg-css");clipPath.onclick=function(){body.classList.toggle("css")},svg.onclick=function(){svgJS.classList.toggle("visibility"),svgCSS.classList.toggle("visibility")};
